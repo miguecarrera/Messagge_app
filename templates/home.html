@@ -1,0 +1,7 @@
+<!-- templates/home.html -->
+<h1>Página de Inicio del Tablón de Anuncios</h1>
+<ul>
+    {% for post in object_list %}
+        <li>{{ post.text }}</li>
+    {% endfor %}                                    
+</ul>
